@@ -1,0 +1,46 @@
+Tum ek senior UI/UX designer aur frontend developer ho. Ek mobile-first landing page banao, poora code ek single index.html (HTML+CSS+JS, koi framework nahi), jo seedha Vercel/Netlify par upload ho sake.
+
+BRAND
+Naam: Naziya Qureshi | Role: Entrepreneur, Graphic Designer, Online-Skills Coach
+Vision: "Empower People to Empower Themselves"
+Audience: Muslim women, students, housewives jo ghar baithe digital skills seekh kar kamai karna chahti hain
+Language: Hinglish, saral aur dosti bhara tone
+WhatsApp: 918530597120
+
+DESIGN
+Emerald #0b3d2e + gold #e8b931 + cream #fbf6e9. Halka Islamic touch (crescent/geometric pattern). Fonts: Poppins + Playfair Display. 360px se start, tablet/desktop responsive. Scroll-reveal, counters, pulsing WhatsApp button, tap targets min 48px, light/dark mode, prefers-reduced-motion respect.
+
+SECTIONS (is order mein)
+1. Hero: badge ("Skill Seekers Community"), headline, sub-text, main video embed, WhatsApp CTA
+2. Meet Your Coach: photo arch frame mein, 3 badges (Entrepreneur / Graphic Designer / Online-Skills Coach), vision card, 3 animated stats (Years of Experience, Students Helped, Placeholder stat)
+3. Real Success Stories: swipeable auto-scroll carousel of student feedback screenshots + feedback videos, tap par fullscreen zoom, note "Shared with permission"
+4. "Join karne par kya hoga?": 4 numbered steps + CTA (sab text original likho)
+5. Stats card (experience, students reached)
+6. FAQ accordion (8 sawal, original answers)
+7. Final CTA: "Kaise start karein" (Name / Age / Profession), "Number save karein" box, WhatsApp button, "Form Bharein" button, Instagram link, "24 ghante mein kya milega" mini-list
+8. Footer: Privacy Policy popup, disclaimer, tagline, "© 2026 Naziya Qureshi. All rights reserved."
+
+FORM POPUP
+Fields: Full Name*, Phone*, Age*, Gender* (Female/Male/Other), Profession* (Student/Housewife/Working Professional/Other). Validation ke baad "Send to WhatsApp" ek <a target="_blank"> link ho jo wa.me/918530597120?text=... kholega (saari details message mein). window.open mat use karna.
+
+ADMIN PANEL (bahut zaroori)
+- Footer mein "Admin Login" link, password protected (default naziya123, change karne ka option)
+- Tabs: Text & Stats | Steps & FAQ | Contact (WhatsApp, Instagram, saved number) | Photo | Feedback | Videos
+- Feedback tab: "Add Feedback" form, jisme (a) multiple images upload (auto-compress canvas se ~800px, JPEG 0.7), (b) har feedback ke saath optional student naam/caption, (c) delete button, (d) up/down reorder
+- Videos tab: "Add Video" form, URL paste karo (YouTube / Google Drive / .mp4 auto-detect karke embed), title field, delete option. Main hero video ke liye alag URL field
+- Meri photo upload (compress hokar save)
+- Buttons: Save (localStorage), "Download Updated Page" (poora updated index.html download, taaki hosting par re-upload ho sake), Reset
+- Saara content ek CONFIG JSON se aaye taaki edit asaan ho
+
+COPYRIGHT AUR LEGAL (strictly)
+- Kisi aur ki website ka text, images, logo ya code copy mat karna; saari copy original likhna
+- Sirf Google Fonts, emoji, apne SVG icons; stock images ke liye sirf Unsplash/Pexels/Pixabay ya placeholder
+- Koi jhoothe/guarantee income claims nahi. Stats aur kamai ke numbers placeholder (admin se edit honge). Line add karo: "Results har person ki mehnat par depend karte hain"
+- Footer mein disclaimer + Privacy Policy popup
+- Kisi Nabi, Sahaba ya jaandar ki tasveer/AI image nahi
+
+UX/SEO
+Semantic HTML, alt text, aria-labels, keyboard focus, WCAG AA contrast, lazy-load images. Title, meta description, Open Graph, favicon. Floating WhatsApp button jo content na dhake. Har CTA par chhota clear text ("WhatsApp par Message Karein"). Sab links/buttons test karke dena.
+
+OUTPUT
+Pehle 5 lines mein design decisions, phir poori index.html, end mein 5 steps: Vercel par upload kaise karein aur admin panel kaise use karein.
